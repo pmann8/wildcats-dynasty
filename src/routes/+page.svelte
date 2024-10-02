@@ -117,7 +117,7 @@
         text-align: center;
         font-size: 1.8em;
         margin: 10px;
-        font-style: nomral;
+        font-style: italic;
     }
 
     .label {
