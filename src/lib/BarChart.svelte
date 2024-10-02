@@ -5,15 +5,21 @@
     export let graphs, leagueTeamManagers, curGraph = 0;
 
     const colors = [
-        "--barChartOne",
-        "--barChartTwo",
-        "--barChartThree",
-        "--barChartFour",
-        "--barChartFive",
-        "--barChartSix",
+        "#446a88",
+        "#32788f",
+        "#1d808d",
+        "#198886",
+        "#2b8673",
+        "#448864",
+        "#578844",
+        "#7d8844",
+        "#887c44",
+        "#886844",
+        "#885444",
+        "#884444",
     ];
 
-    // note that due to changig to horizontal, yMin and yMax are now used as xMin and xMax
+    // note that due to changing to horizontal, yMin and yMax are now used as xMin and xMax
     $: xMin = graphs[curGraph].secondStats.length > 0 ? graphs[curGraph].xMin/3 : graphs[curGraph].xMin;
     $: xMax = graphs[curGraph].xMax;
     $: stats = graphs[curGraph].stats;
